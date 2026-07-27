@@ -180,6 +180,40 @@ Inside the .lib:
 <img width="531" height="371" alt="image" src="https://github.com/user-attachments/assets/e26d314c-1854-498c-ad3b-bfa6afbc0eda" />
 
 
+<img width="715" height="491" alt="image" src="https://github.com/user-attachments/assets/848a9a1b-62f5-46cf-b3a0-12ccdf17ec95" />
+
+
+###  L3 introduction to logic synthesis part2
+
+
+Why do we need slow cells ???
+
+<img width="719" height="538" alt="image" src="https://github.com/user-attachments/assets/ef2f596a-47f5-4c58-990d-f51e4a998c94" />
+
+**Faster VS Slower Cells**
+
+<img width="727" height="538" alt="image" src="https://github.com/user-attachments/assets/792ea597-381c-48ab-87ff-bb3b1f876075" />
+
+
+**Selection of cells**
+
+<img width="717" height="518" alt="image" src="https://github.com/user-attachments/assets/a2f525a0-c5d0-4daa-afec-a7a1557848f4" />
+
+
+**Synthesis Illustration**
+
+<img width="723" height="550" alt="image" src="https://github.com/user-attachments/assets/15cdb89e-d3ab-41f4-a599-9508a049dfe2" />
+
+
+### L1 Lab3 Yosys 1 good mux Part1
+
+To invoke the YOSYS type yosys 
+
+
+
+
+
+
 
 
 
