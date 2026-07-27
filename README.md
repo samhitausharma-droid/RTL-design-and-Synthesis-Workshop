@@ -110,6 +110,89 @@ If sel = 1, the output follows i1
 we know that the testbench instantiates the design 
 
 
+###  L1 Introduction to yosys
+
+**What is a SYNTHESIZER**
+
+  It is a tool used for converting RTL into Netlist 
+    Yosys is the synthesizer used here 
+
+  **But what is a netlist?**
+  
+  Design (Verilog code) → Tells what the circuit should do.
+  Netlist → Tells how the circuit is built using logic gates and how they're connected.
+
+  In other words the netlist is the representation of the design in the form of the cells present in the .lib
+
+  **Yosys setup**
+
+  <img width="959" height="539" alt="image" src="https://github.com/user-attachments/assets/6fa915fa-5d4e-48e0-97d7-bc649e071cf9" />
+
+
+  **Verify the synthesis**
+
+  
+<img width="712" height="392" alt="image" src="https://github.com/user-attachments/assets/5efaa011-ed3d-4d3b-824d-51ecaa66b039" />
+
+
+### L2 introduction to logic synthesis part1
+
+
+ <img width="724" height="535" alt="image" src="https://github.com/user-attachments/assets/e27ddb69-a327-4fdf-95ab-dbebfd5d86e9" />
+
+ How do we map the rtl code and the design logic circuit
+
+ Ans::<img width="725" height="536" alt="image" src="https://github.com/user-attachments/assets/e3435334-0d14-4cdb-9204-a38e7a11dbcc" />
+
+
+ **What is .lib**
+
+ # What is .lib
+
+• .lib
+  - Collection of logical modules.
+  - Includes basic logic gates like And, Or, Not, etc...
+  - Different flavors of same gate
+      • 2 input And gate
+          - Slow
+          - Medium
+          - Fast
+
+      • 3 input And gate
+          - Slow
+          - Medium
+          - Fast
+
+      • 4 input And gate
+          - Slow
+          - Medium
+          - Fast
+
+      • ..................
+
+Inside the .lib:
+
+- AND GATE
+- NOT GATE
+- OR GATE
+- ................
+
+<img width="531" height="371" alt="image" src="https://github.com/user-attachments/assets/e26d314c-1854-498c-ad3b-bfa6afbc0eda" />
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+
 
 
 
