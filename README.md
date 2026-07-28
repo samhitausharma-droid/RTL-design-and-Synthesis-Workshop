@@ -211,6 +211,34 @@ To invoke the YOSYS type yosys
 
 
 
+<img width="670" height="458" alt="image" src="https://github.com/user-attachments/assets/1d8d76b9-4b51-4603-918b-3328128227e6" />]
+
+if we are not getting the file name then we can find it by the command highlighted
+
+
+<img width="380" height="421" alt="image" src="https://github.com/user-attachments/assets/a34ed455-7c57-455c-890e-747f662bed3a" />
+
+
+To convert our rtl file into a gate and what gate it should link to is specified through the command
+
+**abc -liberty**
+
+
+<img width="234" height="58" alt="image" src="https://github.com/user-attachments/assets/3f23b7e4-6d7c-4fb2-9399-7da3aa5beeb3" />
+
+<img width="283" height="106" alt="image" src="https://github.com/user-attachments/assets/ca803ea9-1cff-41e3-9aa4-23c1a510a19d" />
+
+In order to see the logic 
+
+type show 
+
+<img width="959" height="530" alt="image" src="https://github.com/user-attachments/assets/fc943358-5fd6-407c-90ce-b462f1bf2225" />
+
+
+
+
+
+
 
 
 
