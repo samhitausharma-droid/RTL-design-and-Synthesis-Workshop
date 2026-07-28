@@ -1,4 +1,4 @@
-<img width="760" height="353" alt="image" src="https://github.com/user-attachments/assets/58ba544f-480e-4ffe-9a04-fde7642cb5bf" /># RTL-design-and-Synthesis-Workshop
+# RTL-design-and-Synthesis-Workshop
 RTL Design and Synthesis Workshop
 # RTL Design and Synthesis using Verilog, Yosys & SKY130
 
