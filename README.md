@@ -850,6 +850,100 @@ When we synthesize it we get
 
 ### L1 IF CASE Constructs part1
 
+We will mainly study about IF and CASE statements 
+
+
+**If is mainly used to create priority**
+
+*Syntax*
+
+<img width="173" height="200" alt="image" src="https://github.com/user-attachments/assets/55fe0f57-468f-44ec-b911-665605d02f7d" />
+
+clearly the if portion has the priority 
+
+
+<img width="693" height="373" alt="image" src="https://github.com/user-attachments/assets/9da5c859-bcaf-402f-a2e1-fc46c807bb51" />
+
+
+<img width="576" height="304" alt="image" src="https://github.com/user-attachments/assets/089d9df4-470a-4ae5-b355-2e8ea23100db" />
+
+
+
+Incomplete if or if-else if statements without a final else can cause the synthesis tool to infer a latch. This happens because the output is not assigned for all possible input conditions, requiring the hardware to retain its previous value. To avoid unintended latch inference, always assign outputs in every execution path of combinational logic.
+
+
+<img width="692" height="385" alt="image" src="https://github.com/user-attachments/assets/f5afe094-561e-4eef-816f-aae835caa988" />
+
+
+
+### L2 IF CASE Constructs part2
+
+
+<img width="692" height="389" alt="image" src="https://github.com/user-attachments/assets/5a3b77de-e471-400e-9f38-2058bed7536f" />
+
+
+<img width="722" height="407" alt="image" src="https://github.com/user-attachments/assets/1d6896de-1198-4a79-80b6-3852527e4b3d" />
+
+
+<img width="707" height="387" alt="image" src="https://github.com/user-attachments/assets/7459f0db-be7c-49a5-bb54-efe7bca048be" />
+
+
+### L3 IF CASE Constructs part3
+
+
+In a case statement, every output must be assigned in every case branch. If an output is left unassigned in any branch (partial assignment), the synthesis tool infers a latch to retain its previous value. To avoid latch inference, ensure all outputs are assigned in every case or provide default assignments.
+
+
+<img width="689" height="391" alt="image" src="https://github.com/user-attachments/assets/2bde9966-322d-41ff-bf12-0675fe9ad214" />
+
+
+if-else if statements evaluate conditions sequentially with priority, so only the first true condition is executed. In contrast, a case statement selects one matching case based on the selector value and should not contain overlapping case items, as they can lead to unpredictable behavior.
+
+
+<img width="680" height="372" alt="image" src="https://github.com/user-attachments/assets/51814cc7-13e5-4b32-beb2-dd57bc726cf3" />
+
+
+### L2 Lab Incomplete IF part2
+
+
+<img width="452" height="254" alt="image" src="https://github.com/user-attachments/assets/0f5a808c-b6c9-42f9-9143-aa22654c839a" />
+
+
+<img width="759" height="198" alt="image" src="https://github.com/user-attachments/assets/1b837bfb-4d94-4321-88f7-15c347524c0a" />
+
+
+<img width="881" height="247" alt="image" src="https://github.com/user-attachments/assets/68600ce0-d477-44f1-abd2-642da29355b6" />
+
+
+### L1 Lab incomplete overlapping Case part1
+
+
+<img width="959" height="537" alt="image" src="https://github.com/user-attachments/assets/4c71f4cc-6d29-4d9d-9395-3a3215cc67de" />
+
+
+
+<img width="481" height="253" alt="image" src="https://github.com/user-attachments/assets/b995855d-6f3d-4ae8-bb31-09b7775abf95" />
+
+
+
+<img width="550" height="256" alt="image" src="https://github.com/user-attachments/assets/8c8f1acd-3d9d-47ad-a540-7f2d43d1fa87" />
+
+
+
+<img width="562" height="296" alt="image" src="https://github.com/user-attachments/assets/f0684f1c-b7d9-4477-a3cd-38a4171a7c08" />
+
+its clearly following what we had expected
+
+
+
+
+<img width="922" height="361" alt="image" src="https://github.com/user-attachments/assets/865d1ef2-2e77-4790-ac12-ddf0b3da19c9" />
+
+
+
+<img width="447" height="223" alt="image" src="https://github.com/user-attachments/assets/2a3ca328-bc09-418a-b92d-74770b90dde5" />
+
+
 
 
 
