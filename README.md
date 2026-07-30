@@ -39,10 +39,26 @@ This repository is organized module-wise, with each section containing detailed 
 - Verilog HDL
 - Icarus Verilog
 - GTKWave
-- Yosys Open Synthesis Suite
+- Yosys Open Synthesis Suit
 - SKY130 Open PDK
 
 ---
+
+## 📚 Table of Contents
+
+- [Day 1 - Introduction to Verilog RTL design and Synthesise](#day-1---introduction-to-verilog-rtl-design-and-synthesise)
+- [Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles](#day-2---timing-libs-hierarchical-vs-flat-synthesis-and-efficient-flop-coding-styles)
+- [Day 3 - Combinational and sequential optmizations](#day-3---combinational-and-sequential-optmizations)
+- [Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch](#day-4---gls-blocking-vs-non-blocking-and-synthesis-simulation-mismatch)
+- [Day 5 - Optimization in synthesis](#day-5---optimization-in-synthesis)
+
+
+
+
+
+
+
+### Day 1 - Introduction to Verilog RTL design and Synthesise
 
 ###  L1 Introduction to iverilog design test bench
 
@@ -268,6 +284,8 @@ Process,Variation,Temperature
 <img width="960" height="530" alt="image" src="https://github.com/user-attachments/assets/8a09bd06-f692-48fc-bc26-5cca3c4ff3bf" />
 
 
+### Day 2 - Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
+
 ### L2 Lab4 Introduction to dot Lib part2
 
 
@@ -374,6 +392,9 @@ if we create only submodule 1
 But why did we do it ????
 
 <img width="473" height="266" alt="image" src="https://github.com/user-attachments/assets/687c84fe-8354-473a-b95b-3b0bd6aa48a0" />
+
+
+
 
 
 ### L1 Why Flops and Flop coding styles part1
@@ -485,6 +506,8 @@ OUTPUT
 
 
 <img width="959" height="254" alt="image" src="https://github.com/user-attachments/assets/23280022-64af-49b3-81fa-8bde39bda9bd" />
+
+### Day 3 - Combinational and sequential optmizations
 
 ###  L1 Introduction to optimisations part1
 
@@ -657,7 +680,7 @@ IF WE LOOK AT Q LOGIC ALONE::
 <img width="959" height="416" alt="image" src="https://github.com/user-attachments/assets/48ae0501-91f2-4e67-bccf-8538d2812d53" />
 
 
-### DAY 4  GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+### Day 4 - GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
 
 ### L1 GLSConceptsAndFlowUsingIverilog
 
@@ -942,6 +965,199 @@ its clearly following what we had expected
 
 
 <img width="447" height="223" alt="image" src="https://github.com/user-attachments/assets/2a3ca328-bc09-418a-b92d-74770b90dde5" />
+
+
+
+###  L2 Lab incomplete overlapping Case part2
+
+
+<img width="959" height="520" alt="image" src="https://github.com/user-attachments/assets/fd751a17-4244-430b-9f53-23921d6eee2b" />
+
+
+<img width="392" height="227" alt="image" src="https://github.com/user-attachments/assets/f321343e-de74-4431-8294-09308869b509" />
+
+
+Waveform
+
+<img width="557" height="260" alt="image" src="https://github.com/user-attachments/assets/4b7ff73e-7260-49ca-b999-7f510cdfa239" />
+
+
+<img width="959" height="528" alt="image" src="https://github.com/user-attachments/assets/66a5fecb-7aea-4b61-89eb-060989761b98" />
+
+**IF WE SEE HERE THERE ARE NO LATCHES**
+
+<img width="959" height="394" alt="image" src="https://github.com/user-attachments/assets/7b636210-f48d-47bc-9636-1f2f8a8a0d46" />
+
+This is another partial case
+
+
+<img width="704" height="394" alt="image" src="https://github.com/user-attachments/assets/6f87d22e-5cdf-4fb2-a9bf-fc6a5b22908b" />
+
+
+
+### L3 Lab incomplete overlapping Case part3
+
+
+<img width="946" height="538" alt="image" src="https://github.com/user-attachments/assets/43992d60-be12-4ca5-876e-0574dd52b5af" />
+
+
+**we can see only one latch as there is no latching behavior for y**
+
+
+
+<img width="959" height="542" alt="image" src="https://github.com/user-attachments/assets/60bef3ae-34e2-4cc7-b096-67c743464372" />
+
+**in the path of y there is no latch but in the path of x there is latch**
+
+
+for the bad_case 
+
+<img width="611" height="329" alt="image" src="https://github.com/user-attachments/assets/95f0909d-7dc2-409b-9144-6d312c6ca05f" />
+
+the tool is getting confused here 
+
+it is neither following i2 or i3 it is getting confused and latching on to a value 1
+
+
+###  L4 Lab incomplete overlapping Case part4
+
+
+<img width="959" height="522" alt="image" src="https://github.com/user-attachments/assets/f1652a00-1d55-4656-83e0-50dc2b6295ca" />
+
+
+<img width="959" height="538" alt="image" src="https://github.com/user-attachments/assets/b5991bb9-a0af-46c6-881a-d30eeab46b7d" />
+
+
+<img width="556" height="302" alt="image" src="https://github.com/user-attachments/assets/5e018483-ff07-410c-8bb1-914eee1f055f" />
+
+### L1 For Loop and For Generate part1
+
+<img width="688" height="386" alt="image" src="https://github.com/user-attachments/assets/c84d9646-7177-4152-9249-057251a6b59a" />
+
+
+
+<img width="687" height="369" alt="image" src="https://github.com/user-attachments/assets/c93b63ff-2f72-45ec-baf2-53ba386e4326" />
+
+
+
+<img width="691" height="383" alt="image" src="https://github.com/user-attachments/assets/2be99f95-43f1-4224-80fc-29bcb8bb84b9" />
+
+
+###  L2 For Loop and For Generate part2
+
+
+
+<img width="700" height="381" alt="image" src="https://github.com/user-attachments/assets/b909ebf1-506a-4090-94f9-84c671dab9ce" />
+
+
+A 1×8 Demultiplexer (DEMUX) routes a single input to one of eight output lines based on the 3-bit select signal (sel). The output bus is first initialized to all zeros, and a for loop checks each output index. When the loop index matches the select value, only that output is assigned the input while all other outputs remain 0.
+
+
+
+<img width="696" height="395" alt="image" src="https://github.com/user-attachments/assets/edda39c7-7923-4957-8fc8-26cb27b160b4" />
+
+
+for-generate is used to replicate the same hardware logic multiple times during synthesis, avoiding repetitive code. A genvar variable controls the loop, and each iteration creates a separate hardware instance (such as an AND gate). Unlike for loops inside always blocks, generate loops are written outside always blocks and are used for hardware generation, not sequential execution.
+
+
+###  L3 For Loop and For Generate part3
+
+**RIPPLE CARRY ADDER**
+
+
+<img width="517" height="283" alt="image" src="https://github.com/user-attachments/assets/694d15fb-5153-4d48-a022-674ea14ee972" />
+
+
+**difference between for and for generate**
+
+
+<img width="473" height="139" alt="image" src="https://github.com/user-attachments/assets/68e35c9b-b263-4cef-a69b-38b6c19ecb93" />
+
+
+
+### L1 Lab For and For Generate part1
+
+
+<img width="959" height="535" alt="image" src="https://github.com/user-attachments/assets/2bd4812d-969d-43a7-b3bb-b15660f8c413" />
+
+
+
+for-generate is used to express and replicate hardware. It creates multiple hardware instances at compile/synthesis time instead of executing sequentially like a software for loop.
+
+
+
+<img width="502" height="248" alt="image" src="https://github.com/user-attachments/assets/90746859-5d58-4c0c-a9d3-c8e71bb91fd5" />
+
+
+
+
+
+
+<img width="754" height="353" alt="image" src="https://github.com/user-attachments/assets/0ed0b7ce-72b0-42b8-98a2-0bf2452451ff" />
+
+
+if we write the same course using case statements it will look like this 
+
+
+<img width="375" height="177" alt="image" src="https://github.com/user-attachments/assets/7c0a8e46-f2cb-4430-8e05-1c581686c53a" />
+
+
+### L2 Lab For and For Generate part2
+
+
+
+<img width="959" height="526" alt="image" src="https://github.com/user-attachments/assets/0f189a61-2b54-4463-813e-d7da8d342411" />
+
+
+
+<img width="350" height="137" alt="image" src="https://github.com/user-attachments/assets/8fec8b44-382f-4905-9624-0c5bc4884272" />
+
+
+
+<img width="757" height="404" alt="image" src="https://github.com/user-attachments/assets/cf0595db-4f3c-413b-b7bf-3092138c23d8" />
+
+
+**for the generate case**
+
+
+<img width="560" height="298" alt="image" src="https://github.com/user-attachments/assets/9577b248-005a-4694-acb0-b5ed38fbce8a" />
+
+
+
+###  L3 Lab For and For Generate part3
+
+
+
+<img width="377" height="188" alt="image" src="https://github.com/user-attachments/assets/fa7a31b8-a4c8-4577-b8ab-1df72dc12931" />
+
+
+
+RTL for the full adder can be written in 2 ways 
+
+
+<img width="360" height="140" alt="image" src="https://github.com/user-attachments/assets/eee06f03-09ff-49a3-a2b2-8a8aabcbfe57" />
+
+
+2nd way: i have a full adder and can use the for generate to instantiate the full adder in a loop
+
+
+
+<img width="959" height="526" alt="image" src="https://github.com/user-attachments/assets/1e62f352-0563-497f-aff9-f354022de5e0" />
+
+
+
+<img width="493" height="284" alt="image" src="https://github.com/user-attachments/assets/128173e1-b32a-4fc8-97f7-b6430b2fbc87" />
+
+
+###  L4 Lab For and For Generate part4
+
+
+<img width="881" height="440" alt="image" src="https://github.com/user-attachments/assets/107ac3f5-c5d1-4514-8ff9-3dee747c56b6" />
+
+
+
+
+
 
 
 
